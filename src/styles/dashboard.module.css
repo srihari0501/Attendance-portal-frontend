@@ -1,0 +1,140 @@
+/* dashboard.module.css */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/*.content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .summaryContainer {
+  margin-top: 20px;
+} */
+
+.monthSelector {
+  margin-bottom: 20px;
+}
+
+/* .heatmapContainer {
+  margin-bottom: 20px;
+} */
+/* .summaryContainer {
+  width: 30%; 
+  float: left; 
+  margin-right: 20px; 
+ 
+} */
+
+/* .heatmapContainer {
+  width: calc(70% - 20px); 
+  float: left; 
+
+  height: 300px;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Calendar Heatmap styles */
+.react-calendar-heatmap {
+  font-size: 0.4rem; /* Reduce the font size to reduce the calendar size */
+  width: 0px;
+  display: inline-block;
+}
+
+.react-calendar-heatmap .color-empty {
+  fill: #ebedf0; /* Default color for empty days */
+}
+
+.react-calendar-heatmap .color-scale-0 {
+  fill: #ebedf0; /* Color for days with no attendance */
+}
+
+.react-calendar-heatmap .color-scale-1 {
+  fill: #44a340; /* Color for days with attendance */
+}
+
+.react-calendar-heatmap rect {
+  stroke-width: 1px; /* Adjust stroke width if necessary */
+}
+
+.react-calendar-heatmap rect:hover {
+  stroke: #555;
+  stroke-width: 2px;
+}
+
+.react-calendar-heatmap .week {
+  margin: 1px; /* Adjust margin between weeks */
+}
+
+/* CalendarHeatmap.module.css */
+
+.heatmapContainer {
+  width: 350px; /* Adjust width as needed */
+  height: 420px; /* Adjust height as needed */
+  margin: 0 auto; /* Center horizontally */
+  background-color: #ffffff; /* Example background color */
+  border: 1px solid #ccc; /* Example border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
