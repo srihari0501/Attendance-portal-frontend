@@ -1,61 +1,6 @@
-// // authService.js
-
 import axios from 'axios';
 
-// const API_URL = 'http://localhost:3000'; // Update with your backend URL
-
-// const authService = {
-//     async login(email, password) {
-//         try {
-//             const response = await axios.post(`${API_URL}/login`, { email, password });
-//             return response.data; // Assuming backend returns user data upon successful login
-//         } catch (error) {
-//             throw new Error('Login failed'); // Handle error (e.g., display error message to user)
-//         }
-//     },
-//     async signUp(firstName, lastName, email, password) {
-//         try {
-//             const userData = {
-//                 firstName: firstName,
-//                 lastName: lastName,
-//                 email: email,
-//                 password: password
-//             };
-
-//             console.log(userData);
-//             const response = await axios.post(`${API_URL}/signup`, userData);
-//             return response.data; // Assuming backend returns user data upon successful sign-up
-//         } catch (error) {
-//             throw new Error('Sign-up failed'); // Handle error (e.g., display error message to user)
-//         }
-//     },
-//    // authService.js
-
-// // Existing code...
-
-// async getUserData() {
-//     try {
-//         const response = await axios.get(`${API_URL}/userData`);
-//         return response.data;
-//     } catch (error) {
-//         throw new Error('Failed to fetch user data');
-//     }
-// },
-
-// async getAttendanceSummary() {
-//     try {
-//         const response = await axios.get(`${API_URL}/attendance/summary`);
-//         return response.data;
-//     } catch (error) {
-//         throw new Error('Failed to fetch attendance summary');
-//     }
-// },
-
-// };
-
-// export default authService;
-
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://attendance-portal-backend-01im.onrender.com/api';
 
 const authService = {
     async login(email, password) {
