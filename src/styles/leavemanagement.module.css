@@ -1,15 +1,8 @@
-/* leaveManagement.module.css */
-
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 h1 {
@@ -18,26 +11,55 @@ h1 {
     color: #333;
 }
 
-input {
-    margin: 5px 0;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.leaveForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.leaveForm label {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.leaveForm input {
+    margin-top: 5px;
     padding: 10px;
-    width: calc(100% - 22px);
+    width: calc(100% - 22px); /* Adjusted for padding */
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="date"] {
-    width: calc(50% - 22px);
-    margin-right: 10px;
-}
-
-input[type="text"] {
-    width: calc(100% - 22px);
-}
-
-button {
+.leaveForm button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 4px;
@@ -45,8 +67,8 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.leaveForm button:hover {
+    background-color: #218838;
 }
 
 ul {
@@ -62,20 +84,81 @@ li {
     border: 1px solid #ccc;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
-li span {
-    flex-grow: 1;
+li > div {
+    margin-bottom: 10px;
 }
 
 li button {
+    align-self: flex-end;
     background-color: #dc3545;
     padding: 5px 10px;
     font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+li button:first-child {
+    margin-right: 5px;
 }
 
 li button:hover {
     background-color: #c82333;
+}
+
+.editFormContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.editForm label {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.editForm input {
+    margin-top: 5px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.editForm button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.editForm button:first-child {
+    margin-right: 5px;
+}
+
+.editForm button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
