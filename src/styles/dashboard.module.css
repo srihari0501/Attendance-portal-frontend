@@ -33,89 +33,46 @@ p {
   margin: 0;
 }
 
-/*.content {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* .summaryContainer {
-  margin-top: 20px;
-} */
 
 .monthSelector {
   margin-bottom: 20px;
 }
 
-/* .heatmapContainer {
-  margin-bottom: 20px;
-} */
-/* .summaryContainer {
-  width: 30%; 
-  float: left; 
-  margin-right: 20px; 
- 
-} */
-
-/* .heatmapContainer {
-  width: calc(70% - 20px); 
-  float: left; 
-
-  height: 300px;
-
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Button styles */
 button {
   padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px !important;
+    cursor: pointer;
+    border: none;
 }
 
 button:hover {
-  background-color: #007bff;
+  background-color: #0056b3;
   color: #fff;
 }
 
-/* Calendar Heatmap styles */
 .react-calendar-heatmap {
-  font-size: 0.4rem; /* Reduce the font size to reduce the calendar size */
+  font-size: 0.4rem; 
   width: 0px;
   display: inline-block;
 }
 
 .react-calendar-heatmap .color-empty {
-  fill: #ebedf0; /* Default color for empty days */
+  fill: #ebedf0; 
 }
 
 .react-calendar-heatmap .color-scale-0 {
-  fill: #ebedf0; /* Color for days with no attendance */
+  fill: #ebedf0;
 }
 
 .react-calendar-heatmap .color-scale-1 {
-  fill: #44a340; /* Color for days with attendance */
+  fill: #44a340; 
 }
 
 .react-calendar-heatmap rect {
-  stroke-width: 1px; /* Adjust stroke width if necessary */
+  stroke-width: 1px;
 }
 
 .react-calendar-heatmap rect:hover {
@@ -124,17 +81,16 @@ button:hover {
 }
 
 .react-calendar-heatmap .week {
-  margin: 1px; /* Adjust margin between weeks */
+  margin: 1px; 
 }
-
-/* CalendarHeatmap.module.css */
 
 .heatmapContainer {
-  width: 350px; /* Adjust width as needed */
-  height: 420px; /* Adjust height as needed */
-  margin: 0 auto; /* Center horizontally */
-  background-color: #ffffff; /* Example background color */
-  border: 1px solid #ccc; /* Example border */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  width: 350px; 
+  height: 420px; 
+  margin: 0 auto; 
+  background-color: #ffffff; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
+
