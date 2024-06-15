@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import leaveService from '../services/leaveService';
 import styles from '../styles/leavemanagement.module.css';
 import { toast } from 'react-toastify';
-import Spinner from './Spinner';
 
 function LeaveManagement() {
     const navigate = useNavigate();
@@ -12,17 +11,14 @@ function LeaveManagement() {
     const [editLeave, setEditLeave] = useState(null);
     const [errors, setErrors] = useState({});
     const [editMode, setEditMode] = useState(false); // Track whether in edit mode
-    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         const fetchLeaves = async () => {
-            setLoading(true);
             try {
                 const userId = localStorage.getItem('userId');
                 const fetchedLeaves = await leaveService.getUserLeaves(userId);
-                setLoading(false);
                 setLeaves(fetchedLeaves);
             } catch (error) {
-                setLoading(false);
                 toast.error('Error fetching leaves, ' + error);
                 console.error('Error fetching leaves:', error);
             }
