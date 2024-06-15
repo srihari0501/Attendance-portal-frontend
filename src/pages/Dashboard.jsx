@@ -153,7 +153,7 @@ function Dashboard() {
         <div className={styles.container}>
             <header className={styles.header}>
                 <div className={styles.left}>
-                    <h1>Welcome, {user && user.name}</h1>
+                    <h1>Welcome, {user && user.firstName}</h1>
                     <p>{greeting}</p>
                 </div>
                 <div className={styles.right}>
